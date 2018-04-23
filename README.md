@@ -9,10 +9,12 @@ Installation
 
 Use go get.
 
+	go get github.com/jinzhu/gorm
 	go get github.com/Jetereting/auorm
 
 Then import the validator package into your own code.
 
+	import "github.com/jinzhu/gorm"
 	import "github.com/Jetereting/auorm"
 
 示例:
