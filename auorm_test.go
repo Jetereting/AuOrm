@@ -14,7 +14,7 @@ var (
 )
 
 func init() {
-	DB, err = gorm.Open("mysql", "root:linlin34l3.j!2?1d+-d*7@tcp(139.199.39.76:3306)/wb_csv?charset=utf8")
+	DB, err = gorm.Open("mysql", "user:password@tcp(ip:port)/database?charset=utf8")
 	if err != nil {
 		fmt.Println(err)
 		return
