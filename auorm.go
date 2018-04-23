@@ -6,8 +6,8 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
-// ResultMaps sql查询返回[]map[string]string类型
-func ResultMaps(db *gorm.DB, sqlQuery string, sqlValues ...interface{}) (result []map[string]string, err error) {
+// Raw sql查询返回[]map[string]string类型
+func Raw(db *gorm.DB, sqlQuery string, sqlValues ...interface{}) (result []map[string]string, err error) {
 	rows, err := db.Raw(sqlQuery, sqlValues...).Rows()
 	if err != nil {
 		return
